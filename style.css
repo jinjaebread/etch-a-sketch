@@ -1,0 +1,11 @@
+.div.container {
+    display: flex;
+    max-width: 960px;
+}
+
+.div.box {
+    flex: 1;
+    background-color: pink;
+    border: 2px solid blue;
+    min-width: 100px;
+}
