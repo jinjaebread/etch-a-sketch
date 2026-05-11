@@ -13,6 +13,7 @@ for (let i = 1; i <= gridSize; i++) {
     div.classList.add("box");
     divContainer.appendChild(div);
     div.style.flex = "0 0 " + basisValue + "%";
+    div.addEventListener("mouseover", (e) => {
+        div.style.backgroundColor = "black";
+    });
 }
-
-
