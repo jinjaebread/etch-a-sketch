@@ -1,11 +1,23 @@
-.div.container {
+body {
     display: flex;
-    max-width: 960px;
+    align-items: center;
+    justify-content: center;
 }
 
-.div.box {
-    flex: 1;
-    background-color: pink;
-    border: 2px solid blue;
-    min-width: 100px;
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+div.box {
+    /*flex: 0 0 6.25%; /*grow shrink basis (have this as percentage i guess)*/
+    border: 1px solid pink;
+    box-sizing: border-box; /*Makes border included with width to not add unncessary sizes*/
+    padding: 1%;
 }
