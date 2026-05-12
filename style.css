@@ -16,7 +16,6 @@ div.container {
 }
 
 div.box {
-    /*flex: 0 0 6.25%; /*grow shrink basis (have this as percentage i guess)*/
     border: 1px solid pink;
     box-sizing: border-box; /*Makes border included with width to not add unncessary sizes*/
     aspect-ratio: 1/1;
