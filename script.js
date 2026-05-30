@@ -15,6 +15,7 @@ gridBtn.addEventListener("click", (e) => {
         basisValue = 100 / num;
     }
 
+    /*this allows us to clear the grid for new grid*/
     divContainer.replaceChildren();
 
     /*generate thy grid*/
@@ -23,12 +24,19 @@ gridBtn.addEventListener("click", (e) => {
         div.classList.add("box");
         divContainer.appendChild(div);
         div.style.flex = "0 0 " + basisValue + "%";
+
+        let opacityValue = 0.1;
+        let opacity = 0;
+
         div.addEventListener("mouseover", (e) => {
-            div.style.backgroundColor = "black";
+            /*div.style.backgroundColor = "black";*/
+            let randRgbOne = Math.floor(Math.random() * 256);
+            let randRgbTwo = Math.floor(Math.random() * 256);
+            let randRgbThree = Math.floor(Math.random() * 256);
+            div.style.backgroundColor = "rgb(" + randRgbOne + ", " + randRgbTwo + ", " + randRgbThree + ")";
+            
+            opacity = opacity + opacityValue;
+            div.style.opacity = opacity;
         });
     }   
 });
-
-
-
-
